@@ -3,7 +3,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: codegen
-  title: Code Generation Application
+  title: Code Generation Application Edited
   description: Build your own Large Language Model (LLM)-enabled code generation application to generate code source from a natural language. Pick from the model servers available or bring your own.
   tags: ["ai", "llamacpp", "vllm", "python"]
   annotations:
@@ -385,7 +385,7 @@ spec:
       input:
         appName: ${{ parameters.name }}-app-of-apps
         # name set in rhdh config
-        argoInstance: default
+        argoInstance: openshift-gitops
         namespace: ai-rhdh
         repoUrl: https://${{ parameters.githubServer if parameters.hostType === 'GitHub' else parameters.gitlabServer }}/${{ parameters.repoOwner }}/${{ parameters.repoName }}-gitops.git
         path: './app-of-apps'
