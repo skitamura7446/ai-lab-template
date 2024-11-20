@@ -3,7 +3,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: codegen
-  title: Code Generation Application Edited
+  title: Code Generation Application Edited 001
   description: Build your own Large Language Model (LLM)-enabled code generation application to generate code source from a natural language. Pick from the model servers available or bring your own.
   tags: ["ai", "llamacpp", "vllm", "python"]
   annotations:
